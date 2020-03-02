@@ -1,0 +1,510 @@
+body {
+  background-color: #efefef;
+}
+.menu {
+  position: fixed;
+  top: 10%;
+  z-index: 1;
+}
+.dots {
+  justify-content: space-around;
+}
+.dots .dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 0;
+}
+.dots .dot.active,
+.dots .dot:hover {
+  background-color: #0096db;
+  transition: 1s;
+  margin-top: 0;
+  border-top-width: 0;
+}
+.list-group-item:hover {
+  background-color: #0096db;
+  transition: 1s;
+  color: #ffffff;
+}
+.list-group-item.dots:first-child,
+.list-group-item.dots:last-child {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-radius: 50%;
+}
+.dots .list-group-item:first-child,
+.dots .list-group-item:last-child {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  border-radius: 50%;
+}
+.personal_information {
+  margin-top: 20px;
+  height: 95%;
+}
+.education {
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.award h6 {
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-right: 50px;
+  background-image: url(../images/certificate.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  line-height: 1.8em;
+}
+.award p:first-of-type {
+  padding-right: 50px;
+  background-image: url(../images/calendar.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.award p:last-child {
+  padding-right: 50px;
+  background-image: url(../images/school.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+.form_compl .award h6 {
+  padding-left: 50px;
+  background-position: left center;
+}
+.form_compl .award p:first-of-type {
+  padding-left: 50px;
+  background-position: left center;
+}
+.form_compl .award p:last-child {
+  padding-left: 50px;
+  background-position: left center;
+}
+.header-section .h2-section {
+  color: #007bff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 90px;
+}
+.chart canvas:first-of-type {
+  display: none;
+}
+/****  5-1 - ABOUT ****/
+.section-about {
+  margin-bottom: 75px;
+}
+.section-about .profile {
+  padding: 55px 35px 130px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.11);
+  background-color: white;
+}
+.section-about .photo-profile {
+  margin-bottom: 20px;
+}
+.section-about .photo-profile img {
+  display: block;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+.section-about .download-resume {
+  margin-bottom: 25px;
+  padding: 17px 5px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s;
+}
+.section-about .download-resume:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3), 0 0 12px rgba(0, 0, 0, 0.2);
+}
+.section-about .text-download {
+  padding-left: 8px;
+}
+.section-about .available {
+  text-align: center;
+}
+.section-about h2 {
+  padding-bottom: 4px;
+}
+.section-about h3 {
+  padding-bottom: 20px;
+}
+.section-about p {
+  padding-bottom: 27px;
+}
+.section-about .li-info {
+  padding-bottom: 10px;
+}
+.section-about .title-info {
+  display: inline-block;
+}
+.section-about .title-links {
+  display: inline-block;
+}
+.section-about .ul-social-links {
+  padding: 0;
+  margin: 0;
+}
+.section-about .li-social-links {
+  display: inline-block;
+  margin: 0;
+}
+.section-about .li-social-links a {
+  display: inline-block;
+  text-align: center;
+  transition: all 0.2s;
+  font-size: 3em;
+}
+.section-about .li-social-links a:after {
+  content: "Ir a linkedin";
+  font-size: 0.3em;
+  font-family: sans-serif;
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  background: #4d4848;
+  color: #ffffff;
+  padding: 5px;
+  transition: 0.5s;
+  opacity: 0;
+  border-radius: 0.3em;
+}
+.section-about .li-social-links a::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid #4d4848;
+  position: absolute;
+  bottom: -10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+.section-about .li-social-links a:hover:after {
+  opacity: 1;
+}
+.section-about .li-social-links a:hover:before {
+  opacity: 1;
+}
+/****  5-2 - SKILLS ****/
+.section-skills .h2-section {
+  margin-bottom: 88px;
+}
+.section-skills .professional-skills,
+.section-skills .additional-skills {
+  padding: 0 30px 30px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.11);
+  background-color: white;
+}
+.section-skills .title-skills {
+  text-align: center;
+}
+.section-skills h3 {
+  display: inline-block;
+  position: relative;
+  top: -32px;
+  padding: 18px 28px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #007bff;
+  color: white;
+}
+.section-skills .skill-value {
+  position: absolute;
+  right: 45px;
+}
+.section-skills .progress {
+  height: 14px;
+  margin-bottom: 13px;
+  border-radius: 0px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+.section-skills .progress-bar {
+  height: 14px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+.section-skills .circle {
+  padding-bottom: 20px;
+  text-align: center;
+}
+.section-skills .chart-percentage {
+  position: absolute;
+  width: 100%;
+  top: 45px;
+  left: 0;
+  font-weight: bold;
+}
+.section-skills .chart canvas {
+  width: 114px;
+  height: 114px;
+}
+.section-skills .other .skill {
+  padding-bottom: 6px;
+}
+.section-skills .other-skills i {
+  margin-right: 5px;
+}
+/****  5-3 - EDUCATION ****/
+.section-education {
+  margin-bottom: 45px;
+}
+.section-education .education-content {
+  margin-bottom: 30px;
+  padding: 30px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.11);
+  background-color: white;
+}
+.section-education h3 {
+  margin-bottom: 18px;
+  display: inline-block;
+  padding: 15px 45px;
+  min-height: 50px;
+  position: relative;
+  left: -45px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+  background-color: #007bff;
+  color: white;
+}
+.section-education h3::before {
+  content: '';
+  position: absolute;
+  top: 52px;
+  left: 0px;
+  border-width: 5px 7px;
+  border-style: solid;
+  border-color: transparent;
+  transition: all 0.6s;
+}
+.section-education .ul-education {
+  margin-bottom: 12px;
+}
+.section-education .li-specialty {
+  margin-bottom: 5px;
+}
+.section-education .education-icon {
+  display: inline-block;
+  width: 23px;
+  text-align: center;
+}
+/****  5-4 - EXPERIENCE ****/
+.section-experience {
+  margin-bottom: 30px;
+}
+.section-experience .icon-experience {
+  display: inline-block;
+  margin-left: 161px;
+  padding: 8px 13px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.11);
+  background-color: white;
+}
+.section-experience .all-experience {
+  margin-left: 180px;
+  padding-top: 45px;
+  padding-left: 23px;
+}
+.section-experience .experience-content {
+  padding: 30px;
+  margin-bottom: 45px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 10px 0 rgba(0, 0, 0, 0.11);
+  background-color: white;
+}
+.section-experience .experience-content::before {
+  content: '';
+  position: absolute;
+  left: 191px;
+  margin-top: -13px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  background: #007bff;
+}
+.section-experience .period-experience {
+  display: inline-block;
+  position: absolute;
+  left: -3px;
+  margin-top: -30px;
+  width: 174px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 0 15px rgba(0, 0, 0, 0.08);
+  background-color: #007bff;
+  color: white;
+}
+.section-experience .specialty-name {
+  margin-bottom: 10px;
+}
+.section-experience .company-name {
+  margin-bottom: 8px;
+}
+.skill {
+  margin-bottom: 35px;
+  position: relative;
+  overflow: hidden;
+}
+.skill > p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1716;
+  margin: 0;
+}
+.skill:before {
+  width: 100%;
+  height: 5px;
+  content: "";
+  display: block;
+  position: absolute;
+  background: #959595;
+  bottom: 0;
+}
+.skill-bar {
+  width: 100%;
+  height: 5px;
+  background: #007bff;
+  display: block;
+  position: relative;
+}
+/* SKILL 1 */
+.skill1 {
+  width: 95%;
+}
+.skill-bar span {
+  position: absolute;
+  top: -30px;
+  padding: 0;
+  font-size: 18px;
+  padding: 3px 0;
+  font-weight: 500;
+}
+.skill-bar {
+  position: relative;
+}
+.skill1 .skill-count1 {
+  right: 0;
+}
+/* SKILL 2 */
+.skill2 {
+  width: 85%;
+}
+.skill2 .skill-count2 {
+  right: 0;
+}
+/* SKILL 3 */
+.skill3 {
+  width: 75%;
+}
+.skill3 .skill-count3 {
+  right: 0;
+}
+/* SKILL 4 */
+.skill4 {
+  width: 65%;
+}
+.skill4 .skill-count4 {
+  right: 0;
+}
+/* SKILL 5 */
+.skill5 {
+  width: 80%;
+}
+.skill5 .skill-count5 {
+  right: 0;
+}
+/* SKILL 6 */
+.skill6 {
+  width: 90%;
+}
+.skill6 .skill-count6 {
+  right: 0;
+}
+/*====Skill Bar=====*/
+.container {
+  height: 300px;
+  max-width: 100%;
+  width: 70%;
+  margin: 10% auto;
+}
+.progress-bar {
+  margin: 20px 0 10px;
+  overflow: hidden;
+  /*padding-left:20px;
+  padding-right: 25px; /* Separate bars from container */
+}
+.progress-title-holder {
+  padding-bottom: 7px;
+  position: relative;
+  margin: 5px 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 2e;
+  line-height: 15px;
+  font-weight: 400;
+  color: #2e2e2e;
+}
+.progress-title {
+  z-index: 100;
+  font-weight: bold;
+}
+.progress-number-wrapper {
+  width: 100%;
+  z-index: 10;
+}
+.progress-number-mark {
+  margin-bottom: 4px;
+  border-radius: 3px;
+  background-color: #00d2ff;
+  padding: 0 8px;
+  position: absolute;
+  bottom: 0;
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+.progress-number-wrapper,
+.progress-number-mark {
+  font-family: Open Sans, sans-serif;
+  font-size: 11px;
+  line-height: 24px;
+  height: 24px;
+  letter-spacing: 0px;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: none;
+  color: #ffffff;
+}
+.down-arrow {
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 3px solid #00d2ff;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+.progress-content-outter {
+  height: 12px;
+  background-color: #E1E1E0;
+}
+.progress-content {
+  height: 21px;
+  background-color: #00d2ff;
+  width: 0%;
+}
+/*hobies*/
+.hobbie {
+  background-color: #007bff;
+  color: white;
+  padding: 20px 0;
+}
+.hobbie i {
+  font-size: 3rem;
+}
